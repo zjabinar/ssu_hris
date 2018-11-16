@@ -1,0 +1,100 @@
+
+.txt-center{
+	text-align:center;
+}
+.txt-right{
+	text-align:right;
+}
+.table {
+    margin-bottom: 0px;
+}
+.header {
+	width:100%;
+}
+.header  .logo{
+	width:80px;
+	height:80px;
+	float:left;
+	margin: 10px 20px 10px 0px;
+}
+.logo img{
+	width:80px;
+	height:80px;
+	border:1px solid #eeeeee;
+}
+.header h2 {
+	margin-bottom: 10px;
+	margin-top: 30px;
+	float:left;
+	font-weight: bold;
+	color:#5d5d5d;
+}
+/*panel*/
+.panel-area {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	margin-bottom:20px;
+}
+.panel-header {
+	border-bottom: 1px solid #ddd;
+	background-color: rgba(0, 0, 0, 0.03);
+}
+.panel-content {
+	padding:10px;
+}
+.inner-panel {
+	padding:10px;
+	display: inline-block;
+	width: 100%;
+}
+.header-title{
+	padding:12px 10px;
+	font-size: 24px;
+}
+.rules-title {
+	float:left;
+	font-size:18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+	padding-top: 10px;
+}
+/*Tabs css*/
+.nav-list {
+    border-bottom: none !important;
+}
+.nav-list > li {
+    width: 100%;
+	background: #f3faf6;
+	color: #000000;
+	border-bottom: 1px solid #e5ece8;
+	margin-bottom: 1px;
+}
+.nav-list > li:last-child {
+	border-bottom: none;
+	margin-bottom: 0px;
+}
+.nav-list > li > a {
+    border: none !important;
+    border-radius: none !important;
+	color: #000000;
+}
+.nav-list > li > a:hover {
+    border-color: none !important;
+}
+.nav-list > li.active > a, .nav-list > li.active > a:focus, .nav-list > li.active > a:hover {
+    background-color: #e5ece8 !important;
+    border-color: none !important;
+    color: #000000;
+	border-radius: none !important;
+	width: 100%;
+}
+.nav-list>li>a {
+    margin-right: 0 !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.nav-list>li>a:focus, .nav-list>li>a:hover {
+    text-decoration: none;
+    background-color: #e5ece8 !important;
+}
