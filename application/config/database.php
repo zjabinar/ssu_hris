@@ -56,7 +56,7 @@ return [
             'driver' => 'mysql',
             'host' => 'localhost',
             'port' => '3306',
-            'database' =>'ssu_hris',
+            'database' =>'ssu_hrm',
             'username' => 'root',
             'password' => 'secret',
             'charset' => 'utf8',
