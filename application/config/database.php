@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'localhost',
+            'host' => '10.0.0.1',
             'port' => '3306',
-            'database' =>'ssu_hrm',
+            'database' =>'ssu_hris',
             'username' => 'root',
-            'password' => 'secret',
+            'password' => 'Masaya2009#',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
