@@ -101,17 +101,17 @@
 
                                         <div class="form-group">
                                             <label>{{language_data('Last Name')}}</label>
-                                            <input type="text" class="form-control" value="{{$employee->lastname}}" name="lastname">
+                                            <input type="text" class="form-control" value="{{$employee->lastname}}" name="lastname" required>
                                         </div>
                                         
                                         <div class="form-group">
                                             <label>First Name</label>
-                                            <input type="text" class="form-control" required="" value="{{$employee->firstname}}" name="firstname">
+                                            <input type="text" class="form-control" required="" value="{{$employee->firstname}}" name="firstname" required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Middle Name</label>
-                                            <input type="text" class="form-control" required="" value="{{$employee->middlename}}" name="middlename">
+                                            <input type="text" class="form-control" required="" value="{{$employee->middlename}}" name="middlename" required>
                                         </div>
                                         <div class="form-group">
                                             <label>Name Extension</label>
@@ -119,11 +119,11 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Email</label>
-                                            <input type="text" class="form-control"  value="{{$employee->email}}" name="email">
+                                            <input type="text" class="form-control"  value="{{$employee->email}}" name="email" required>
                                         </div>
                                         <div class="form-group">
                                             <label>{{language_data('Date Of Birth')}}</label>
-                                            <input type="text" class="form-control datePicker" name="birthdate" value="{{get_date_format($employee->birthdate)}}">
+                                            <input type="text" class="form-control datePicker" name="birthdate" value="{{get_date_format($employee->birthdate)}}" required>
                                         </div>
 
                                     </div>
@@ -135,7 +135,7 @@
 
                                         <div class="form-group">
                                             <label>Civil Status</label>
-                                            <input type="text" class="form-control"  value="{{$employee->civil_status}}" name="civil_status">
+                                            <input type="text" class="form-control"  value="{{$employee->civil_status}}" name="civil_status" required>
                                         </div>
                                         
                                         <div class="form-group">
@@ -184,7 +184,7 @@
                                             <select class="selectpicker form-control" data-live-search="true" name="department" id="department_id">
                                                 <option>{{language_data('Select Department')}}</option>
                                                 @foreach($department as $d)
-                                                    <option value="{{$d->id}}" @if($employee->department==$d->id) selected @endif>  {{$d->department}}</option>
+                                                    <option value="{{$d->id}}" @if($employee->department_id==$d->id) selected @endif>  {{$d->department}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -508,15 +508,15 @@
                                             <div class="panel-body">
                                                     <div class="form-group">
                                                         <label>SSU Employee No.:</label>
-                                                        <input type="text" name="employee_code" value="{{ $employee->employee_code }}" class="form-control">
+                                                        <input type="text" name="employee_code" value="{{ $employee->employee_code }}" class="form-control" readonly="">
                                                     </div>
                                                     <div class="form-group">
                                                         <label>ATM No.:</label>
-                                                        <input type="text" name="atmnumber" value="{{  $employee->atmnumber }}" class="form-control">
+                                                        <input type="text" name="atmnumber" value="{{  $employee->atmnumber }}" class="form-control" readonly="">
                                                     </div>
                                                     <div class="form-group">
                                                         <label>TIN No.</label>
-                                                        <input type="text" name="tin_number" value="{{  $employee->tin_number }}" class="form-control">
+                                                        <input type="text" name="tin_number" value="{{  $employee->tin_number }}" class="form-control" readonly="">
                                                     </div>
                                   
                                                    
@@ -531,15 +531,15 @@
 
                                                         <div class="form-group">
                                                             <label>GSIS No.</label>
-                                                            <input type="text" name="gsisnumber" value="{{  $employee->gsisnumber }}" class="form-control">
+                                                            <input type="text" name="gsisnumber" value="{{  $employee->gsisnumber }}" class="form-control" readonly="">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>GSIS CRN:</label>
-                                                            <input type="text" name="gsisnumber_crn" value="{{ $employee->gsisnumber_crn }}" class="form-control">
+                                                            <input type="text" name="gsisnumber_crn" value="{{ $employee->gsisnumber_crn }}" class="form-control" readonly="">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Pag-ibig MID No.:</label>
-                                                            <input type="text" name="hdmfnumber" value="{{ $employee->hdmfnumber }}" class="form-control">
+                                                            <input type="text" name="hdmfnumber" value="{{ $employee->hdmfnumber }}" class="form-control" readonly="">
                                                         </div>
                             
                                                        
@@ -554,11 +554,11 @@
                                                          
                                                             <div class="form-group">
                                                                 <label>Philhealth No.:</label>
-                                                                <input type="text" name="philhealthnumber" value="{{ $employee->philhealthnumber }}" class="form-control">
+                                                                <input type="text" name="philhealthnumber" value="{{ $employee->philhealthnumber }}" class="form-control" readonly="">
                                                             </div>
                                                             <div class="form-group">
                                                                 <label>SSS No.:</label>
-                                                                <input type="text" name="sssnumber" value="{{ $employee->sssnumber }}" class="form-control">
+                                                                <input type="text" name="sssnumber" value="{{ $employee->sssnumber }}" class="form-control" readonly="">
                                                             </div>
                                                            
                                                     </div>

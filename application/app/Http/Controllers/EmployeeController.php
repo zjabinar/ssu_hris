@@ -1859,7 +1859,7 @@ public function addTraining(Request $request)
         $appStage=app_config('AppStage');   
 
         $v = \Validator::make($request->all(), [
-            'firstname' => 'required', 'lastname' => 'required'
+            'firstname' => 'required', 'lastname' => 'required', 'email' => 'required'
         ]);
 
         if ($v->fails()) {
